@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+body {
+    background: linear-gradient(135deg, #7c6fc5, #a3c9e2);
+    margin: 0;
+    padding: 0;
+}
+
+/* Tarjeta principal más ligera */
+.my-content {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #dcd0ff;
+    border: 2px solid #000000;
+    border-radius: 16px;
+    box-shadow: 0 4px 0 #000000;
+    text-align: center;
+    font-family: 'Poppins', 'Montserrat', sans-serif;
+    color: #1a1a1a;
+}
+
+.my-content img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Títulos más vistosos pero limpios */
+.my-content h3 {
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: #111111;
+    margin: 25px 0 15px 0;
+}
+
+/* Barras de navegación */
+.my-social-navbar,
+.my-navbar-1,
+.my-navbar-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+/* Botones en lista con gradiente estático estilo K-pop y texto de alta legibilidad */
+.my-navbar-1 a,
+.my-navbar-2 a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #ff8da1, #d8b4fe, #f472b6);
+    background-size: 200% 200%;
+    color: #111111;
+    text-decoration: none;
+    padding: 14px 20px;
+    border-radius: 30px;
+    border: 2px solid #000000;
+    font-size: 0.95rem;
+    font-weight: 600;
+    box-shadow: 0 3px 0 #000000;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, color 0.2s ease;
+}
+
+/* Hover para botones en lista con animación de lámpara de aceite */
+.my-navbar-1 a:hover,
+.my-navbar-2 a:hover {
+    background: linear-gradient(135deg, #f472b6, #c084fc, #fb7185, #e879f9);
+    background-size: 300% 300%;
+    animation: lavaLampMove 4s ease infinite;
+    color: #ffffff;
+    font-weight: 600;
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 5px 0 #000000;
+}
+
+.my-navbar-1 a:active,
+.my-navbar-2 a:active {
+    transform: translateY(1px) scale(1);
+    box-shadow: 0 1px 0 #000000;
+}
+
+/* Navbar de redes sociales */
+.my-social-navbar {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+/* --- BASE Y HOVER DE REDES SOCIALES --- */
+.my-social-navbar a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    color: #ffffff;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    text-decoration: none;
+    box-shadow: 0 2px 0 #000000;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.my-social-navbar a:hover {
+    transform: translateY(-3px) scale(1.12);
+    box-shadow: 0 4px 0 #000000;
+}
+
+.my-social-navbar a:active {
+    transform: translateY(1px) scale(1);
+    box-shadow: 0 1px 0 #000000;
+}
+
+/* --- ESTADOS ESTÁTICOS DE REDES SOCIALES --- */
+.my-social-navbar a:nth-child(1) {
+    background: linear-gradient(135deg, #25f4ee, #fe2c55);
+}
+
+.my-social-navbar a:nth-child(2) {
+    background: linear-gradient(135deg, #fcd34d, #f472b6, #a855f7);
+}
+
+.my-social-navbar a:nth-child(3) {
+    background: linear-gradient(135deg, #ff4d4d, #b91c1c);
+}
+
+/* --- ESTADOS CON HOVER (ANIMACIÓN DE LÁMPARA DE ACEITE) --- */
+.my-social-navbar a:nth-child(1):hover {
+    background: linear-gradient(135deg, #25f4ee, #fe2c55, #25f4ee);
+    background-size: 300% 300%;
+    animation: lavaLampMove 4s ease infinite;
+}
+
+.my-social-navbar a:nth-child(2):hover {
+    background: linear-gradient(135deg, #fcd34d, #f472b6, #a855f7, #fcd34d);
+    background-size: 300% 300%;
+    animation: lavaLampMove 4s ease infinite;
+}
+
+.my-social-navbar a:nth-child(3):hover {
+    background: linear-gradient(135deg, #ff4d4d, #f87171, #b91c1c, #ff4d4d);
+    background-size: 300% 300%;
+    animation: lavaLampMove 4s ease infinite;
+}
+
+/* Animación global de flujo continuo */
+@keyframes lavaLampMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Separadores más ligeros */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #000000;
+    margin: 25px 0;
+    opacity: 0.2;
+}
+
+/* Avatar animado sin zoom */
+.avatar-animada {
+    width: 130px;
+    height: 130px;
+    background-image: url('static/profile.webp');
+    background-size: 780px 130px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    display: block;
+    margin: 0 auto;
+}
+
+.avatar-animada:hover {
+    animation: playAnimation 1.5s step-end;
+}
+
+@keyframes playAnimation {
+    0%     { background-position: 0 0; }
+    6.66%  { background-position: -130px 0; }
+    13.33% { background-position: -260px 0; }
+    20%    { background-position: -390px 0; }
+    26.66% { background-position: -520px 0; }
+    33.33% { background-position: -650px 0; }
+    100%   { background-position: -650px 0; }
+}
