@@ -65,7 +65,7 @@ pub fn home() -> Html {
                     </nav>
                     <hr/>
                     <h3><strong>{"CONTACTO"}</strong></h3>
-                    <h3>{"fake_email@gmail.com"}</h3>
+                    <h3>{"sonny.pinku77@gmail.com"}</h3>
                 </div>
             </div>
         </section>
